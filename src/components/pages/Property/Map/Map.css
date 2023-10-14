@@ -1,0 +1,235 @@
+#map,
+#addPropertyMap {
+    height: 500px;
+    width: 95%;
+    margin: auto;
+    box-shadow: 0 0 18px 0 #00000091;
+    border-radius: 13px;
+}
+
+#map #info-window,
+#addPropertyMap #info-window {
+    max-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+#map #info-window h3,
+#addPropertyMap #info-window h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+#map #info-window p,
+#addPropertyMap #info-window p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+#map .labels,
+#addPropertyMap .labels {
+    color: white;
+    background-color: red;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    font-size: 10px;
+    text-align: center;
+    width: 10px;
+    white-space: nowrap;
+}
+
+.search-suggession-wrapper {
+    position: relative;
+}
+
+.search-suggession-inner {
+    width: 100%;
+    background-color: rgb(50 50 50/0.6);
+    height: 320px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    /* border: 2px solid #ae9f9f; */
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0px 6px 13px 0 #0000008a;
+    backdrop-filter: blur(3px);
+    /* opacity: 0.6; */
+    background-color: #000000c4;
+    padding: 12px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.search-suggession-inner::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+.search-suggession-inner::-webkit-scrollbar-track {
+    background: rgba(33, 37, 41, 0.9) !important;
+    border-radius: 15px;
+}
+
+/* Handle */
+.search-suggession-inner::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 15px;
+}
+
+.property-search-input {
+    position: relative;
+}
+
+.property-search-icon {
+    position: absolute;
+    right: 16px;
+    transform: translateY(50%);
+    bottom: 50%;
+    z-index: 10;
+    color: #e60c0b;
+}
+
+.search-suggession-inner.hidden {
+    height: 0;
+    visibility: hidden;
+}
+
+/* .form-control.search:focus{
+    color: unset !important;
+    background-color: unset !important;
+    border-color: unset !important;
+    outline: unset !important;
+    box-shadow: unset !important;
+    z-index: unset !important ;
+} */
+
+.property-names {
+    color: #fff;
+    line-height: 50px;
+    border-bottom: 1px dashed #aa9d9d;
+}
+
+.display-map #map {
+    width: 100%;
+    /* height: 100vh !important; */
+    border-radius: 0;
+    /* margin-bottom: 50px; */
+}
+
+.display-map .gm-style-iw-a {
+    top: -60px !important;
+}
+
+.display-map .gm-style .gm-style-iw-t {
+    position: absolute;
+    width: 94% !important;
+}
+
+.display-map .gm-style-iw.gm-style-iw-c {
+    width: 405px !important;
+    height: auto !important;
+}
+
+.gm-style-iw.gm-style-iw-c {
+    padding: 5px !important;
+}
+
+a.map-modal-edit-btn {
+    display: inline-block;
+    color: #fff;
+    border-radius: 50%;
+    padding: 1px 4px;
+    transition-duration: 0.3s;
+}
+
+a.map-modal-edit-btn:hover {
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+a.map-modal-edit-btn svg {
+    width: 20px;
+}
+
+.gm-style-iw-d {
+    overflow: hidden !important;
+}
+
+button.gm-ui-hover-effect {
+    top: -3px !important;
+    right: -2px !important;
+    width: unset !important;
+    height: unset !important;
+}
+
+#map #info-content {
+    margin-top: 20px !important;
+}
+
+.modal-heading {
+    background: #e60c0b;
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-heading h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.modal-description-label {
+    /* margin-right: 20px; */
+    font-weight: 500;
+}
+
+.modal-description-value {
+    font-weight: 900;
+}
+
+.modal-description-feature {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.gm-style-iw-tc {
+    display: none !important;
+}
+
+.gm-style .gm-style-iw-c {
+    -webkit-transform: unset !important;
+    transform: unset !important;
+    top: -120px;
+    left: -262px;
+}
+
+.modal-description {
+    margin: 10px 0;
+}
+
+.modal-more-detail-text {
+    color: red;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 2px solid black;
+    font-style: italic;
+}
+
+section.display-map {
+    margin-bottom: 30px;
+    height: 75vh;
+}

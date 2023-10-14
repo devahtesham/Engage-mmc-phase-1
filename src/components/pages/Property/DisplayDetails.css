@@ -1,0 +1,22 @@
+.property-bg-img {
+    width: 100%;
+    height: 95vh;
+
+}
+
+.property-bg-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.display-detail-sec h6 {
+    font-size: 17px;
+    font-weight: 700;
+}
+button.btn-main-clr:hover{
+    background-color: #000 !important;
+}
+button.btn-2:hover{
+    background-color: var(--main-color) !important;
+}

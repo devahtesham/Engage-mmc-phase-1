@@ -1,0 +1,57 @@
+.property-listing-table th{
+    background-color: #F6F6F6 !important;
+    padding: 18px 18px !important;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+    color: #6b6b6b !important;
+    font-size: 14px;
+    font-weight: 700;
+}
+.property-listing-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 18px 18px !important;
+    font-size: 14px;
+}
+.property-listing-table tr td span.input-group-text{
+    padding: unset;
+    border: none;
+}
+.property-listing-table td input.form-check-input:checked{
+    background-color: #E8090C;
+    border-color: #E8090C;
+}
+.property-listing-table td input.form-check-input:focus{
+    box-shadow: none;
+    border-color: #E8090C;
+}
+.property-listing-table .active{
+    background-color: #47b921;
+    font-weight: 500;
+}
+.property-listing-table{
+    height: 590px;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* ======== scroll-bar */
+.property-listing-table::-webkit-scrollbar {
+    width: 8px;
+    /* display: none; */
+}
+
+/* Track */
+.property-listing-table::-webkit-scrollbar-track {
+    background: rgba(33, 37, 41, 0.9) !important;
+    border-radius: 15px;
+}
+
+/* Handle */
+.property-listing-table::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 15px;
+}

@@ -1,0 +1,145 @@
+.notifications-container {
+    position: relative;
+}
+
+.notifications-container .notifications {
+    position: absolute;
+    top: 20px;
+    right: -140px;
+    width: 365px;
+    height: 380px;
+    background-color: #000;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+    transition-duration: 0.5s;
+    z-index: 10;
+    box-shadow: 0 0 13px 0 #000000c2;
+}
+
+.notification-inner {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+}
+
+.notifications-container .notifications.hide-notifications {
+    height: 0;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+.notifications-container .notification-inner::-webkit-scrollbar {
+    display: none;
+}
+
+
+.notification {
+    padding: 8px 0;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+.notification.read {
+    background-color: #ef6f6f;
+    color: #000;
+    /* font-weight: 900; */
+}
+.notification.read h6{
+    font-weight: 900;
+}
+
+.notification.unread {
+    background-color: #e60c0b;
+    color: white;
+}
+
+.header .company-name {
+    line-height: 20px;
+    font-size: 17px;
+    color: #000;
+}
+
+.header .logo-header img {
+    width: 100px;
+}
+
+.property-search-box-container {
+    flex: 0 0 60%;
+}
+
+.property-search-box-container input,
+.property-search-box-container select {
+    border-radius: 10px;
+    border: 1px solid #000;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.property-search-box-container input:focus {
+    box-shadow: none !important;
+    border-color: unset !important;
+}
+
+.header nav ul li a {
+    color: var(--main-color);
+    padding-bottom: 5px;
+}
+
+.header nav ul li a.active {
+    border-bottom: 2px solid #000;
+}
+
+.header nav ul .li {
+    position: relative;
+}
+
+.header nav ul .li::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    right: -24px;
+    width: 2px;
+    height: 18px;
+    background-color: #000;
+
+}
+
+.property-names {
+    transition-duration: 0.5s;
+    transform: scale(0.99);
+}
+
+.property-names:hover {
+    transform: scale(1.02);
+
+    color: var(--main-color);
+}
+
+.notifications {
+    position: relative;
+}
+
+.notification-footer {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: end;
+}
+
+.notification-footer .modal-more-detail-text {
+    color: #fff;
+    border-color: red;
+}
+.notification p{
+    font-size: 13px;
+    line-height: 18px;
+}

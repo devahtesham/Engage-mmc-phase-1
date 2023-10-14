@@ -1,0 +1,19 @@
+.description textarea{
+    height: 180px !important;
+    width: 100%;
+}
+.property-details{
+    /* border-bottom: 1px solid #cfc5c5; */
+    padding-bottom: 15px;
+}
+
+.client{
+    padding: 15px;
+    box-shadow: 0 0 12px 0 #00000059;
+    border-radius: 20px;
+}
+
+.edit-btn,.delete-btn{
+    border: none;
+    background: none;
+}
